@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/favicon.png";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +13,7 @@ function Navbar() {
         <div className="container mx-auto px-4 pe-16 ">
           <div className="flex justify-between items-center h-14">
             <div className="flex items-center">
-              <img src={logo} alt="Logo" className="h-16 w-20 mr-2" />
+              <img src={logo} alt="Logo" className="h-6 w-12 mr-2" />
               <h1 className="text-2xl text-black font-bold">Campus Cloud</h1>
             </div>
             <div className="hidden md:flex space-x-4">
