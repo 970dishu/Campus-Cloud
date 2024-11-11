@@ -21,7 +21,6 @@ function Navbar() {
               <a href="/#about" className="hover:text-[#594545] transition-colors">About</a>
               <a href="/#wheel" className="hover:text-[#594545] transition-colors">Services</a>
               <Link to="/contact" className="hover:text-[#594545] transition-colors">Contact</Link>
-              
               <Link to="/login" className="hover:text-[#594545] transition-colors">Login</Link>
             </div>
             <button className="md:hidden text-black" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -46,9 +45,8 @@ function Navbar() {
             </button>
             <div className="flex flex-col space-y-4 mt-16">
               <Link to="/" className="text-lg hover:text-[#594545] transition-colors" onClick={() => setIsMenuOpen(false)}>Home</Link>
-              <Link to="/about" className="text-lg hover:text-[#594545] transition-colors" onClick={() => setIsMenuOpen(false)}>About</Link>
-              <Link to="/services" className="text-lg hover:text-[#594545] transition-colors" onClick={() => setIsMenuOpen(false)}>Services</Link>
-              <Link to="/portfolio" className="text-lg hover:text-[#594545] transition-colors" onClick={() => setIsMenuOpen(false)}>Portfolio</Link>
+              <Link to="/#about" className="text-lg hover:text-[#594545] transition-colors" onClick={() => setIsMenuOpen(false)}>About</Link>
+              <Link to="/#wheel" className="text-lg hover:text-[#594545] transition-colors" onClick={() => setIsMenuOpen(false)}>Services</Link>
               <Link to="/contact" className="text-lg hover:text-[#594545] transition-colors" onClick={() => setIsMenuOpen(false)}>Contact</Link>
               <Link to="/login" className="text-lg hover:text-[#594545] transition-colors" onClick={() => setIsMenuOpen(false)}>Login</Link>
             </div>
