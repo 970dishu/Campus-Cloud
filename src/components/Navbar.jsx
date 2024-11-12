@@ -44,7 +44,7 @@ function Navbar() {
               <X size={24} />
             </button>
             <div className="flex flex-col space-y-4 mt-16">
-              <Link to="/" className="text-lg hover:text-[#594545] transition-colors" onClick={() => setIsMenuOpen(false)}>Home</Link>
+              <Link to="/#Home" className="text-lg hover:text-[#594545] transition-colors" onClick={() => setIsMenuOpen(false)}>Home</Link>
               <Link to="/#about" className="text-lg hover:text-[#594545] transition-colors" onClick={() => setIsMenuOpen(false)}>About</Link>
               <Link to="/#wheel" className="text-lg hover:text-[#594545] transition-colors" onClick={() => setIsMenuOpen(false)}>Services</Link>
               <Link to="/contact" className="text-lg hover:text-[#594545] transition-colors" onClick={() => setIsMenuOpen(false)}>Contact</Link>
