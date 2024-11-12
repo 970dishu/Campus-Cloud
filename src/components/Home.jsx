@@ -296,7 +296,7 @@ export default function Home() {
         </div>
       </section>
 
-      
+
 
       <section className="py-16 bg-[#0D0D0D]">
         <div className="container mx-auto px-4">
@@ -327,10 +327,10 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {lifeHacks
-              .filter(hack => 
+              .filter(hack =>
                 (selectedCategory === 'all' || hack.category === selectedCategory) &&
                 (hack.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                 hack.shortDescription.toLowerCase().includes(searchQuery.toLowerCase()))
+                  hack.shortDescription.toLowerCase().includes(searchQuery.toLowerCase()))
               )
               .map((hack) => (
                 <motion.div
